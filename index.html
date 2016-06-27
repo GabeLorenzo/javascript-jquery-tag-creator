@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>A Project by  Gabe Lorenzo</title>
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+	<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+	<link rel="stylesheet" href="css/style.css">
+    <!--Font-Awesome -->
+    <script src="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"></script>
+    <!--Google Fonts -->
+    <link rel="stylesheet" type="text/css" href='http://fonts.googleapis.com/css?family=Abel'>
+  </head>
+
+<body>
+  <div class="container">
+    <h1>Add Tags with JavaScript & jQuery</h1>
+    <p>By Gabe Lorenzo</p>
+    <a href="https://github.com/GabeLorenzo" class="mysocial" target="_blank"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i></span></a>
+    <a href="https://www.linkedin.com/in/gabelorenzo" target="_blank" class="mysocial"><span><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></span></a>
+    <hr>
+    <div class="row">
+      <div class="col-xs-4">
+        <div class="jumbotron">
+          <form role="form">
+            <div class="form-group">
+              <label for="usr">Tag:</label>
+              <span id="inputerror"></span>
+              <input type="text" class="form-control" id="terminput" maxlength="50" placeholder="i.e. Awesome!" value="">
+            </div>
+            <div class="form-group">
+              <label for="sel1">Select list:</label>
+              <span id="selecterror"></span>
+              <select id="selectval" class="form-control" id="sel1">
+            <option disabled selected>Choose a tag type</option>
+            <option>Positive</option>
+            <option>Negative</option>
+          </select>
+            </div>
+            <!-- type = button is important so page doesn't refresh -->
+            <button type="button" class="btn btn-info" id="termbtn">Add Tag</button>
+          </form>
+        </div>
+        <!-- end jumbotron -->
+      </div>
+      <!--end col -->
+      <!--<div class="row">-->
+      <div class="col-xs-4">
+        <p><strong>Positive</strong></p>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <ul id="termspos" class="list-unstyled">
+              <button type="button" class="btn btn-warning" id="clearallpos">Clear All</button>
+              <!--<span class="tagcountpos"></span>-->
+            </ul>
+          </div>
+          <!--End Panel body -->
+        </div>
+      </div>
+      <!-- End col xs 4 -->
+      <div class="col-xs-4">
+        <p><strong>Negative</strong></p>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <ul id="termsneg" class="list-unstyled">
+              <button type="button" class="btn btn-warning" id="clearallneg">Clear All</button>
+              <!--<span class="tagcountneg"></span>-->
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      <!-- End col xs 4 -->
+    </div>
+    <!-- End div row -->
+  </div>
+  <!--End Page container -->
+  <!-- jQuery library -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!--library used for draggable list-->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+  <script src="js/index.js"></script>
+  </body>
+</html>

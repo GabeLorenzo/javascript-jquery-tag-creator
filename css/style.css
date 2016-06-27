@@ -1,0 +1,117 @@
+
+.tag {
+  font-size: 14px;
+  padding: .3em .4em .4em;
+  margin: 0 .1em;
+  cursor: pointer;
+}
+.tag:hover {
+  padding: .3em .4em .4em;
+  margin: 0 .1em;
+  cursor: pointer;
+  opacity: 0.5;
+}
+}
+.tag:active {
+  /*font-size: 18px;*/ /*Increasing size makes the remove button buggy*/
+  padding: .3em .4em .4em;
+  margin: 0 .1em;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.tag a {
+  color: #bbb;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.tag a:hover {
+  opacity: 1.0
+}
+
+.tag .remove {
+  vertical-align: bottom;
+  top: 0;
+}
+/*
+.tag .removepos {
+  vertical-align: bottom;
+  top: 0;
+}
+.tag .removeneg {
+  vertical-align: bottom;
+  top: 0;
+}
+*/
+.tag a {
+  margin: 0 0 0 .3em;
+}
+
+.tag a .glyphicon-white {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+.postag {
+  background-color: #00FF00;
+}
+
+.negtag {
+  background-color: #FF0000;
+}
+
+h1,
+p,
+option,
+label,
+input,
+select {
+  font-family: 'Abel';
+}
+
+#inputerror,
+#selecterror {
+  font-family: 'Abel';
+  color: #b3003b;
+}
+
+.panel {
+  min-height: 17em;
+  max-height: 17em;
+  overflow-y: scroll;
+  max-width: 40em;
+  position: relative;
+}
+
+#clearallpos {
+  /*position: absolute;
+  right: 0;*/
+  float: right;
+  font-size: 0.7em;
+}
+
+#clearallneg {
+  float: right;
+  font-size: 0.7em;
+}
+
+.tagcountpos {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: 'Abel';
+}
+
+.tagcountneg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-family: 'Abel';
+}
+.mysocial {
+  color: #000000;
+}
